@@ -6,14 +6,15 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class Auto_Suggestion1 
 {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.Edge.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
 		WebElement SearchBar = driver.findElement(By.xpath("//textarea[@class='gLFyf']"));
@@ -31,10 +32,8 @@ public class Auto_Suggestion1
 		    if(Expected.equals(Actual))
 		    {
 		    	ListBox.get(i).click();
-		    	break;
-		    	
+		    	break;	
 		    }
-		    
 		}
 		Thread.sleep(5000);
 		driver.close();

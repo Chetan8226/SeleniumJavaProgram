@@ -9,7 +9,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Excel_To_Rediff_SignUP_Page 
@@ -17,8 +17,8 @@ public class Excel_To_Rediff_SignUP_Page
 
 	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException 
 	{
-		System.setProperty("webdriver.driver.chromedriver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.Edge.chromedriver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://is.rediff.com/signup/register");
 		WebElement full_Name = driver.findElement(By.xpath("//input[@name='fullname']"));

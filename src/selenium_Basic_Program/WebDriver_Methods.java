@@ -3,19 +3,19 @@ package selenium_Basic_Program;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class WebDriver_Methods 
 {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("Webdriver.Chrome.Driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("Webdriver.Edge.Driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://register.rediff.com/register/register.php?FormName=user_details");
+		driver.get("https://www.facebook.com/");
 	    System.out.println("Title of Web Page = " + driver.getTitle());
-		String expTitle="Rediffmail Free Unlimited Storage";
+		String expTitle="Facebook – log in or sign up";
 		String actTitle=driver.getTitle();
 	    if(expTitle.equals(actTitle))
 	    {

@@ -6,15 +6,15 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class Child_Browser1 
 {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
+		System.setProperty("webdriver.Edge.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.aspsnippets.com/demos/1102/");
 		WebElement openPopUp = driver.findElement(By.xpath("//input[@value='Open Popup']"));
@@ -36,8 +36,8 @@ public class Child_Browser1
         System.out.println("Title of window 1 = " + driver.getTitle());
         WebElement FN = driver.findElement(By.xpath("//td[contains(text(),'Fir')]"));
         WebElement LN = driver.findElement(By.xpath("//td[contains(text(),'Las')]"));
-		System.out.println("First Name = " + FN.getText());
-		System.out.println("Last Name = " + LN.getText());
+		System.out.println("Child Browser First Name Text = " + FN.getText());
+		System.out.println("Child Browser Last Name Text = " + LN.getText());
 		Thread.sleep(3000);
 		driver.quit();
 		

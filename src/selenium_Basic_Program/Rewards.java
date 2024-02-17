@@ -12,7 +12,7 @@ public class Rewards
 		System.setProperty("webdriver.Edge.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
 		WebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
-		driver.get("https://www.bing.com/?scope=web&cc=IN&FORM=ANSPH1&pc=U531");		
+		driver.get("https://www.bing.com/?scope=web&cc=IN&FORM=ANSPH1&pc=U531");
 		WebElement searchBox1 = driver.findElement(By.xpath("//textarea[@type='search']"));
 		WebElement enter = driver.findElement(By.xpath("//label[@id='search_icon']"));
 		enter.click();

@@ -1,15 +1,15 @@
 package selenium_Basic_Program;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Selenium_Program 
 {
 
 	public static void main(String[] args) throws InterruptedException
 	{
-		System.setProperty("webdriver.Edge.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
-	    WebDriver driver=new EdgeDriver();
+		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
+	    WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		Thread.sleep(5000);

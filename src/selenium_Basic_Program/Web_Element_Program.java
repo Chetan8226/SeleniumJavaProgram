@@ -3,15 +3,15 @@ package selenium_Basic_Program;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Web_Element_Program 
 {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("Webdriver.Edge.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
-		WebDriver driver=new EdgeDriver();
+		System.setProperty("Webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://megrecruitment.nic.in/rpa/register.htm");
 		WebElement emailidTxtBox = driver.findElement(By.xpath("//input[@id='emailid']"));

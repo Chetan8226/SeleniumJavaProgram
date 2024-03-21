@@ -3,15 +3,15 @@ package selenium_Basic_Program;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Iframe1 
 {
 
 	public static void main(String[] args) throws InterruptedException 
 	{
-		System.setProperty("webdriver.Edge.chromedriver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\msedgedriver.exe");
-		WebDriver driver=new EdgeDriver();
+		System.setProperty("webdriver.Chrome.chromedriver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst");
 		//WebElement frame1 = driver.findElement(By.xpath("//iframe[@id='iframeResult']"));

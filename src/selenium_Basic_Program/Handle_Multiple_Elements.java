@@ -1,7 +1,5 @@
 package selenium_Basic_Program;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Handle_Multiple_Elements 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -25,8 +22,8 @@ public class Handle_Multiple_Elements
 		Thread.sleep(3000);
 		for(int i=0;i<links.size();i++)
 		{
-			String expLinks="Images";
-			String actLinks=links.get(i).getText();
+			String expLinks = "Images";
+			String actLinks = links.get(i).getText();
 			if(expLinks.equals(actLinks))
 			{
 				links.get(i).click();
@@ -36,7 +33,5 @@ public class Handle_Multiple_Elements
 		System.out.println("Title = " + driver.getTitle());
 		Thread.sleep(3000);
 		driver.close();
-		
 	}
-
 }

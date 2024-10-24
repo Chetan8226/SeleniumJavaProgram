@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebDriver_Methods 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("Webdriver.Chrome.Driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -29,15 +27,12 @@ public class WebDriver_Methods
 	    System.out.println("Current URL = " + currentURL);
 	    //*********************Dimension**************************//
 	    Thread.sleep(2000);
-		Dimension d=new  Dimension(200,300);
+		Dimension d=new  Dimension(400,500);
 	    driver.manage().window().setSize(d);
-	    Thread.sleep(5000);
+	    Thread.sleep(2000);
 	    Point p=new Point(10,700);
 	    driver.manage().window().setPosition(p);
-	    Thread.sleep(5000);
+	    Thread.sleep(2000);
 		driver.close();
-		
-		
 	}
-
 }

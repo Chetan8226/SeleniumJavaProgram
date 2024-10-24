@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -9,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Auto_Suggestion1 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -26,8 +24,8 @@ public class Auto_Suggestion1
 		}
 		for(int i=0;i<ListBox.size();i++)
 		{
-			String Expected="mamaearth sunscreen";
-			String Actual=ListBox.get(i).getText();
+			String Expected = "mamaearth sunscreen";
+			String Actual = ListBox.get(i).getText();
 		    if(Expected.equals(Actual))
 		    {
 		    	ListBox.get(i).click();
@@ -36,7 +34,5 @@ public class Auto_Suggestion1
 		}
 		Thread.sleep(5000);
 		driver.close();
-		
 	}
-
 }

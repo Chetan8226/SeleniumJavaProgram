@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class File_Uploding 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -20,7 +18,5 @@ public class File_Uploding
         Thread.sleep(3000);
 		pressButton.click();
         driver.close();
-	
 	}
-
 }

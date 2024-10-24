@@ -1,7 +1,5 @@
 package selenium_Basic_Program;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +8,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Select_Option_And_First_Option_ListBox 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -36,7 +33,5 @@ public class Select_Option_And_First_Option_ListBox
 		System.out.println(firstoption.getText());
 		Thread.sleep(3000);
 		driver.close();
-		
 	}
-
 }

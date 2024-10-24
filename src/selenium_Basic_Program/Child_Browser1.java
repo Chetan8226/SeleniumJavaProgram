@@ -1,8 +1,6 @@
 package selenium_Basic_Program;
-
 import java.util.Iterator;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Child_Browser1 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -28,7 +25,7 @@ public class Child_Browser1
 		for(int i=0;i<windows.size();i++)
 		{
 			win[i]=itr.next();
-			System.out.println(win[i]);
+			System.out.println("Name of windows = " + win[i]);
 		}
 		driver.switchTo().window(win[0]);
 		System.out.println("Title of Window 0 = " + driver.getTitle());
@@ -40,7 +37,5 @@ public class Child_Browser1
 		System.out.println("Child Browser Last Name Text = " + LN.getText());
 		Thread.sleep(3000);
 		driver.quit();
-		
 	}
-
 }

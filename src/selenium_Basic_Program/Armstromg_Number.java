@@ -2,10 +2,9 @@ package selenium_Basic_Program;
 
 public class Armstromg_Number 
 {
-
 	public static void main(String[] args) 
 	{
-		int num=371,rem,sum=0;
+		int num=350,rem,sum=0;
 		int num1=num;
 		while(num>0)
 		{
@@ -21,8 +20,5 @@ public class Armstromg_Number
 		{
 			System.out.println("Given number is Not Armstrong Number");
 		}
-	
-
 	}
-
 }

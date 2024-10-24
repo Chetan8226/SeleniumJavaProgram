@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -10,7 +9,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Get_All_Option_Present_In_ListBox 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -33,7 +31,5 @@ public class Get_All_Option_Present_In_ListBox
 		}
 		Thread.sleep(3000);
 		driver.close();
-		
 	}
-
 }

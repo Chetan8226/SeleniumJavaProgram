@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Handeling_of_ListBox 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -24,5 +22,4 @@ public class Handeling_of_ListBox
 		Thread.sleep(5000);
 		driver.close();	
 	}
-
 }

@@ -2,7 +2,6 @@ package selenium_Basic_Program;
 
 public class Pattern_Program_4_Pyramid_1 
 {
-
 	public static void main(String[] args) 
 	{
 		int star=1, space=4;
@@ -19,9 +18,6 @@ public class Pattern_Program_4_Pyramid_1
 			System.out.println();
 			star=star+2;
 			space--;
-			
 		}
-
 	}
-
 }

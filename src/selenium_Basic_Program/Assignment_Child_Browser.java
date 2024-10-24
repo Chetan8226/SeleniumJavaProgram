@@ -1,8 +1,6 @@
 package selenium_Basic_Program;
-
 import java.util.Iterator;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Assignment_Child_Browser 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -40,7 +37,5 @@ public class Assignment_Child_Browser
 
 		Thread.sleep(3000);
 		driver.quit();
-		
 	}
-
 }

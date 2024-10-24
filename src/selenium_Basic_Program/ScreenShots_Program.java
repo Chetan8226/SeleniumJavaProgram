@@ -1,8 +1,6 @@
 package selenium_Basic_Program;
-
 import java.io.File;
 import java.io.IOException;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +9,6 @@ import org.openqa.selenium.io.FileHandler;
 
 public class ScreenShots_Program 
 {
-
 	public static void main(String[] args) throws InterruptedException, IOException
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -23,7 +20,5 @@ public class ScreenShots_Program
 		FileHandler.copy(source, dest);
 		//Thread.sleep(3000);
 		driver.close();
-		
 	}
-
 }

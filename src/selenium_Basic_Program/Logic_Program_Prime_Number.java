@@ -2,7 +2,6 @@ package selenium_Basic_Program;
 
 public class Logic_Program_Prime_Number 
 {
-
 	public static void main(String[] args) 
 	{
 		int num=7,count=0;
@@ -22,7 +21,5 @@ public class Logic_Program_Prime_Number
 		{
 			System.out.println("Prime");
 		}
-
 	}
-
 }

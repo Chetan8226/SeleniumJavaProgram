@@ -1,7 +1,5 @@
 package selenium_Basic_Program;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Web_Table 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -28,7 +25,5 @@ public class Web_Table
 		}
 		Thread.sleep(3000);
 		driver.close();
-		
 	}
-
 }

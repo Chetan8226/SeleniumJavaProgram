@@ -2,7 +2,6 @@ package selenium_Basic_Program;
 
 public class Logic_Program_Reverse_Sentence 
 {
-
 	public static void main(String[] args) 
 	{
 		String sent="I am an automation engineer";
@@ -16,7 +15,5 @@ public class Logic_Program_Reverse_Sentence
 		{
 			System.out.print(splitArray[i] + " ");
 		}
-
 	}
-
 }

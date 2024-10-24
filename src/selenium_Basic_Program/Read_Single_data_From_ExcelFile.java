@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -9,7 +8,6 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 
 public class Read_Single_data_From_ExcelFile 
 {
-
 	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException 
 	{
 		FileInputStream file=new FileInputStream("E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\Test_Data\\TD.xlsx"); 
@@ -22,10 +20,5 @@ public class Read_Single_data_From_ExcelFile
 		System.out.println(value2);
 		System.out.println(value3);
 		System.out.println(value4);
-		
-		
-		
-		
 	}
-
 }

@@ -1,12 +1,10 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators_Program 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("Webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -17,7 +15,7 @@ public class Locators_Program
 		driver.findElement(By.tagName("input")).sendKeys("ChetanNannaware");
 		//********by_ID*************
 		driver.findElement(By.id("fullname")).sendKeys("ChetanNannaware");
-		//**********by Class_Name*****
+		//**********by Class_Name********
 		driver.findElement(By.className("txtbox1")).sendKeys("ChetanNannaware");
 		//**********by Name*********
 		driver.findElement(By.name("fullname")).sendKeys("ChetanNannaware");
@@ -33,10 +31,7 @@ public class Locators_Program
 		//driver.findElement(By.linkText("Advertise with us")).click();
 		//**********Xpath by Partial link text*********(If only half name is available it can be work)*****
 		driver.findElement(By.partialLinkText("Advertise")).click();
-		Thread.sleep(5000);
-		driver.close();
-		
-		
+		Thread.sleep(3000);
+		driver.close();	
 	}
-
 }

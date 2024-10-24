@@ -2,7 +2,6 @@ package selenium_Basic_Program;
 
 public class Logic_Program_Palindrome 
 {
-
 	public static void main(String[] args) 
 	{
 		String str="madam";
@@ -13,7 +12,6 @@ public class Logic_Program_Palindrome
 		{
 			ch=str.charAt(i);
 			strrev=strrev+ch;
-			
 		}
 		System.out.println("Original String = " + strOriginal);
 		System.out.println("Reverse String = " + strrev);
@@ -25,8 +23,5 @@ public class Logic_Program_Palindrome
 		{
 			System.out.println("Not Palindrome");
 		}
-	
-
 	}
-
 }

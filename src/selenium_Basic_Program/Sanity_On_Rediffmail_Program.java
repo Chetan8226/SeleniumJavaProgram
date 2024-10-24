@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Sanity_On_Rediffmail_Program 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -38,7 +36,5 @@ public class Sanity_On_Rediffmail_Program
 		System.out.println("Total Element Present on Webpage = " + count);
 		Thread.sleep(3000);
 		driver.close();
-		
 	}
-
 }

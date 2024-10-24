@@ -2,7 +2,6 @@ package selenium_Basic_Program;
 
 public class Logic_Program_ReverseNumberOrString 
 {
-
 	public static void main(String[] args) 
 	{
 		int num=12345;
@@ -20,10 +19,7 @@ public class Logic_Program_ReverseNumberOrString
 		{
 			ch=str.charAt(i);
 			strRev=strRev+ch;
-			
 		}
 		System.out.println("String Reverse Name = " + strRev);
-
 	}
-
 }

@@ -1,8 +1,6 @@
 package selenium_Basic_Program;
-
 import java.io.FileInputStream;
 import java.io.IOException;
-
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
@@ -14,7 +12,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Excel_To_Rediff_SignUP_Page 
 {
-
 	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException 
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -51,7 +48,5 @@ public class Excel_To_Rediff_SignUP_Page
 		College.sendKeys(excel.getRow(0).getCell(9).getStringCellValue());//(0 R,9 C)
 		Thread.sleep(5000);
 		driver.close();
-		
 	}
-
 }

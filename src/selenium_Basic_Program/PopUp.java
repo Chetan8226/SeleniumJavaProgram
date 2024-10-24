@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class PopUp 
 {
-
 	public static void main(String[] args) throws InterruptedException
 	{
 		System.setProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -16,7 +14,7 @@ public class PopUp
 		driver.manage().window().maximize();
 		driver.get("https://demo.automationtesting.in/Alerts.html");
 		//********************Alert Button 1*****************
-		/*WebElement alertbutton1 = driver.findElement(By.xpath("//button[@class='btn btn-danger']"));
+		WebElement alertbutton1 = driver.findElement(By.xpath("//button[@class='btn btn-danger']"));
 		alertbutton1.click();
 		Alert alt = driver.switchTo().alert();
 	    Thread.sleep(3000);
@@ -35,7 +33,7 @@ public class PopUp
 	    String value1 = alt1.getText();
 	    System.out.println("PopUp Text = " + value1);
 	    alt1.accept();
-	    //alt1.dismiss();*/
+	    //alt1.dismiss();
 	    //**********************Alert Button 3****************
 	    WebElement alertwithtextbox = driver.findElement(By.xpath("//a[text()='Alert with Textbox ']"));
 	    WebElement alertbutton3 = driver.findElement(By.xpath("//button[@class='btn btn-info']"));
@@ -55,5 +53,4 @@ public class PopUp
 	    Thread.sleep(3000);
 	    driver.close();
 	}
-
 }

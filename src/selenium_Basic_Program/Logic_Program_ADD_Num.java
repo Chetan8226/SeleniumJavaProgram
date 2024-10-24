@@ -2,7 +2,6 @@ package selenium_Basic_Program;
 
 public class Logic_Program_ADD_Num 
 {
-
 	public static void main(String[] args) 
 	{
 		int num=56789;
@@ -14,7 +13,5 @@ public class Logic_Program_ADD_Num
 			sum=sum+temp;
 		}
 		System.out.println("ADD of Number = " + sum);
-
 	}
-
 }

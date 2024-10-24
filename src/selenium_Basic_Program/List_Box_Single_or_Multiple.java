@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +7,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class List_Box_Single_or_Multiple 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.getProperty("webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -30,5 +28,4 @@ public class List_Box_Single_or_Multiple
 		Thread.sleep(2000);
 		driver.close();
 	}
-
 }

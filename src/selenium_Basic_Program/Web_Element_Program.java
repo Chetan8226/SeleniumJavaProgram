@@ -1,5 +1,4 @@
 package selenium_Basic_Program;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Web_Element_Program 
 {
-
 	public static void main(String[] args) throws InterruptedException 
 	{
 		System.setProperty("Webdriver.Chrome.driver","E:\\Software Testing\\Jarfile\\Eclipse Program\\Selenium_ST\\chromedriver.exe");
@@ -28,9 +26,12 @@ public class Web_Element_Program
 		System.out.println("IS Displayed = " + CheckBox.isDisplayed());
 		System.out.println("Is Enable = " + CheckBox.isEnabled());
 		System.out.println("Is Selected = " + CheckBox.isSelected());
-		Thread.sleep(2000);
+		System.out.println("******************************************");
+		WebElement LOGO = driver.findElement(By.xpath("//img[@class='img-responsive']"));
+		System.out.println("Logo of Application is Display = "+ LOGO.isDisplayed());
+		System.out.println("Logo of Application is Enable = " + LOGO.isEnabled());
+		System.out.println("Logo of Application is Selected = " + LOGO.isSelected());
+		Thread.sleep(3000);
 		driver.close();
-	
 	}
-
 }
